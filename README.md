@@ -1,9 +1,13 @@
 # pb_workflows
 
-Notes related to the [SMRT-LINK](https://www.pacb.com/support/software-downloads/) command line suite
+
+Notes related to the [SMRT-LINK](https://www.pacb.com/support/software-downloads/) command line suite.
+
+The contents within the [`pipelines`](pipelines/) directory of this repo are obtained from the `pbpipeline-resources` within the SMRT-LINK package.
 
 
 ## Download and extract the SMRT-LINK command line installer
+
 
 ```bash
 wget https://downloads.pacbcloud.com/public/software/installers/smrtlink_12.0.0.177059.zip
@@ -13,15 +17,20 @@ unzip smrtlink_12.0.0.177059.zip
 
 ## SMRT Tools-only installation
 
+
 ```bash
 ./smrtlink_12.0.0.177059.run --rootdir ~/smrtlink-12.0.0 --smrttools-only
 ```
 
 ## extract the WDL workflows from the SMRT-LINK package
 
+
 ```bash
 unzip ~/smrtlink-12.0.0/./install/smrtlink-release_12.0.0.177059/bundles/smrttools/install/smrttools-release_12.0.0.177059/private/pacbio/pbpipeline-resources/wdl.zip -d ~/smrtlink-12.0.0/pb_workflows
 ```
+
+The contents of the `pb_workflows` directory are deposited in this github repository.
+
 
 
 # Using the `pbcromwell` tool
@@ -29,9 +38,11 @@ unzip ~/smrtlink-12.0.0/./install/smrtlink-release_12.0.0.177059/bundles/smrttoo
 
 ## List all the available workflows
 
+
 ```bash
 ~/smrtlink-12.0.0/smrtcmds/bin/pbcromwell show-workflows
 ```
+
 
 Output:
 
@@ -64,11 +75,15 @@ https://www.pacb.com/support/documentation
 
 ```
 
+
 ## Get the usage instructions for a particular workflow
 
 Example: 
 Opting for the `pb_variant_calling` workflow from the above list of available workflows.
 
+
 ```bash
 ~/smrtlink-12.0.0/smrtcmds/bin/pbcromwell show-workflow-details pb_variant_calling
 ```
+
+
