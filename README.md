@@ -22,15 +22,7 @@ unzip smrtlink_12.0.0.177059.zip
 ./smrtlink_12.0.0.177059.run --rootdir ~/smrtlink-12.0.0 --smrttools-only
 ```
 
-## extract the WDL workflows from the SMRT-LINK package
-
-
-```bash
-unzip ~/smrtlink-12.0.0/./install/smrtlink-release_12.0.0.177059/bundles/smrttools/install/smrttools-release_12.0.0.177059/private/pacbio/pbpipeline-resources/wdl.zip -d ~/smrtlink-12.0.0/pb_workflows
-```
-
-The contents of the `pb_workflows` directory are deposited in this github repository.
-
+The wdl scripts from the SMRTLINK package are deposited in this github repository.
 
 
 # Using the `pbcromwell` tool
